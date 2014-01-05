@@ -4,7 +4,7 @@ A fortran module for SHA-256 hashing.
 
 Compile and test
 -----------------
-To run the unit-tests install 'funit' [www.funit.org][1] and run with something like:
+To run the unit-tests install 'funit' [http://nasarb.rubyforge.org/][1] and run with something like:
 
     FC=gfortran -fno-range-check -O3 funit
 
@@ -21,5 +21,5 @@ If you found this useful, please let me know.
 
 Mikael Leetmaa <leetmaa@kth.se>
 
-[1]: http::/www.funit.org
- 
+[1]: http://nasarb.rubyforge.org/
+

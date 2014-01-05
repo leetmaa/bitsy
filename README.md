@@ -14,7 +14,7 @@ Note
 ------
 The quick and dirty routine (dirtys_sha256) operates on whatever bits that come in, without swapping to big-endian words, and does therefore not pas any of the standard tests - but works at roughly twice the speed. Use this if you want a good hash function but don't care about following the SHA-256 standard specifications.
 
-Note that this code will not produce the same results on big-endian machines and the module was was only tested on a little-endian Ubuntu LTS 12.04 system using gfortran 4.6.3.
+Note that this code will not produce the same results on big-endian machines and the module was only tested on a little-endian Ubuntu LTS 12.04 system using gfortran 4.6.3.
 
 
 If you found this useful, please let me know.

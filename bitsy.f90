@@ -152,7 +152,7 @@ module bitsy
       end do
 
       ! Write the result to the output variable.
-      write(sha256b,'(8z8)') h0(1), h0(2), h0(3), h0(4), h0(5), h0(6), h0(7), h0(8)
+      write(sha256b,'(8z8.8)') h0(1), h0(2), h0(3), h0(4), h0(5), h0(6), h0(7), h0(8)
 
     end function sha256b
 

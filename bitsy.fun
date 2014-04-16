@@ -375,13 +375,13 @@ end test
 test test_sha256_3
   character(len=1000000) :: str
   str = "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"
-  Assert_Equal(sha256(str), "248D6A61D20638B8E5C02693 C3E6039A33CE45964FF2167F6ECEDD419DB06C1")
+  Assert_Equal(sha256(str), "248D6A61D20638B8E5C026930C3E6039A33CE45964FF2167F6ECEDD419DB06C1")
 end test
 
 test test_sha256_4
   character(len=1000000) :: str
   str = "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"
-  Assert_Equal(sha256(str), "CF5B16A778AF8380 36CE59E7B049237 B249B11E8F07A51AFAC45037AFEE9D1")
+  Assert_Equal(sha256(str), "CF5B16A778AF8380036CE59E7B0492370B249B11E8F07A51AFAC45037AFEE9D1")
 end test
 
 test test_sha256_5
@@ -391,9 +391,9 @@ test test_sha256_5
   do i=1,1000000
      str(i:i) = "a"
   end do
-  Assert_Equal(sha256(str), "CDC76E5C9914FB9281A1C7E284D73E67F1809A48A497200E 46D39CCC7112CD0")
+  Assert_Equal(sha256(str), "CDC76E5C9914FB9281A1C7E284D73E67F1809A48A497200E046D39CCC7112CD0")
   ! Check the quick and dirty implementation as well.
-  ref = "69E3FACD5F08321F78117BD53476E5321845433356F106E7 13E68EC367F3017"
+  ref = "69E3FACD5F08321F78117BD53476E5321845433356F106E7013E68EC367F3017"
   Assert_Equal(dirty_sha256(str), ref)
 end test
 
@@ -406,7 +406,7 @@ end test
 test test_sha256_7
   character(len=1000000) :: str
   str = "secure hash algorithm"
-  Assert_Equal(sha256(str), "F30CEB2BB2829E79E4CA9753D35A8ECC  262D164CC07708 295381CBD643F0D")
+  Assert_Equal(sha256(str), "F30CEB2BB2829E79E4CA9753D35A8ECC00262D164CC077080295381CBD643F0D")
 end test
 
 test test_sha256_8
@@ -418,7 +418,7 @@ end test
 test test_sha256_9
   character(len=1000000) :: str
   str = "For this sample, this 63-byte string will be used as input data"
-  Assert_Equal(sha256(str), "F08A78CBBAEE082B 52AE0708F32FA1E50C5C421AA772BA5DBB406A2EA6BE342")
+  Assert_Equal(sha256(str), "F08A78CBBAEE082B052AE0708F32FA1E50C5C421AA772BA5DBB406A2EA6BE342")
 end test
 
 test test_sha256_10

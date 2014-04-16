@@ -6,7 +6,7 @@ Compile and test
 -----------------
 To run the unit-tests install 'funit' [http://nasarb.rubyforge.org/][1] and run with something like:
 
-    FC=gfortran -fno-range-check -O3 funit
+    FC="gfortran -fno-range-check -O3" funit
 
 The '-fno-range-check' flag is required since the fortran standard otherwise doesn't allow us to work with all bits in the integers (as if they were unsigned).
 
